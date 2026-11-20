@@ -1,0 +1,11 @@
+# The app lives in the my-react-app/ subfolder (React + Vite, npm).
+[build]
+  base = "my-react-app"
+  # Install from package-lock.json first so the vite binary is available
+  command = "npm ci && npm run build"
+  # Relative to base: Vite writes the production build to my-react-app/dist
+  publish = "dist"
+
+[build.environment]
+  # Vite 8 requires Node ^20.19.0 || >=22.12.0
+  NODE_VERSION = "22"

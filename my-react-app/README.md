@@ -1,16 +1,36 @@
-# React + Vite
+# Simple React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Навчальний проєкт на React + Vite. Містить два компоненти, `Button` і `Input`, які приймають props та обробники подій. У `App.jsx` за їх допомогою зібрана проста форма реєстрації.
 
-Currently, two official plugins are available:
+## Запуск
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Потрібен Node.js версії 20.19+.
 
-## React Compiler
+```
+git clone https://github.com/mnc1337-studying/Simple-React-App.git
+cd Simple-React-App
+npm install
+npm run dev
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Сайт відкриється на http://localhost:5173.
 
-## Expanding the ESLint configuration
+## Компоненти
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+`Button` приймає `text` (напис на кнопці), `type` (`button`, `submit` або `reset`) і `onClick`. Якщо `type` не вказано, підтягнеться дефолтне значення - `button`.
+
+`Input` приймає `type` (`text`, `email`, `number`, `password` тощо), `placeholder` і `onChange`. Якщо `type` не вказано, підтягнеться дефолтне значення - `text`.
+
+У формі чотири поля й три кнопки. Те, що вводиться в поля, виводиться в консоль браузера. "Sign up" (`submit`) показує повідомлення, "Clear" (`reset`) очищає поля, "Help" (`button`) показує підказку.
+
+## Структура
+
+```
+src/
+  components/
+    Button.jsx
+    Input.jsx
+  App.jsx
+  main.jsx
+  index.css
+```

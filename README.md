@@ -1,10 +1,12 @@
 # Simple React App
 
-Репозиторій з навчальним проектом на React + Vite. Проект лежить за наступним шляхом: [`my-react-app`](./my-react-app).
+A repository with a learning project built with React + Vite. The project is located at the following path: [`my-react-app`](./my-react-app).
 
-## Швидкий старт
+Preview: https://simple-react-app-mnc1337.netlify.app.
 
-Потрібен Node.js 20.19+.
+## Quick start
+
+Node.js 20.19+ is required.
 
 ```
 git clone https://github.com/mnc1337-studying/Simple-React-App.git
@@ -13,4 +15,4 @@ npm install
 npm run dev
 ```
 
-Усі команди (`npm run dev`, `npm run build`, `npm run lint`) запускаються всередині папки `my-react-app`. Докладніший опис компонентів і структури є в [README проекту](./my-react-app/README.md).
+All commands (`npm run dev`, `npm run build`, `npm run lint`) are run inside the `my-react-app` folder. A more detailed description of the components and structure is available in the [project README](./my-react-app/README.md).

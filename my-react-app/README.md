@@ -1,10 +1,12 @@
 # Simple React App
 
-Навчальний проект на React + Vite. Містить два компоненти, `Button` і `Input`, які приймають props та обробники подій. У `App.jsx` за їх допомогою зібрана проста форма реєстрації.
+A simple project built with React + Vite. It contains two components, `Button` and `Input`, which accept props and event handlers. In `App.jsx`, they are used to assemble a simple sign-up form.
 
-## Запуск
+Preview: https://simple-react-app-mnc1337.netlify.app.
 
-Потрібен Node.js версії 20.19+.
+## Running
+
+Node.js version 20.19+ is required.
 
 ```
 git clone https://github.com/mnc1337-studying/Simple-React-App.git
@@ -13,17 +15,17 @@ npm install
 npm run dev
 ```
 
-Сайт відкриється на http://localhost:5173.
+The site will open at http://localhost:5173.
 
-## Компоненти
+## Components
 
-`Button` приймає `text` (напис на кнопці), `type` (`button`, `submit` або `reset`) і `onClick`. Якщо `type` не вказано, підтягнеться дефолтне значення - `button`.
+`Button` accepts `text` (the button label), `type` (`button`, `submit`, or `reset`), and `onClick`. If `type` is not specified, the default value, `button`, is used.
 
-`Input` приймає `type` (`text`, `email`, `number`, `password` тощо), `placeholder` і `onChange`. Якщо `type` не вказано, підтягнеться дефолтне значення - `text`.
+`Input` accepts `type` (`text`, `email`, `number`, `password`, etc.), `placeholder`, and `onChange`. If `type` is not specified, the default value, `text`, is used.
 
-У формі чотири поля й три кнопки. Те, що вводиться в поля, виводиться в консоль браузера. "Sign up" (`submit`) показує повідомлення, "Clear" (`reset`) очищає поля, "Help" (`button`) показує підказку.
+The form has four fields and three buttons. Whatever is typed into the fields is printed to the browser console. "Sign up" (`submit`) shows a message, "Clear" (`reset`) clears the fields, "Help" (`button`) shows a hint.
 
-## Структура
+## Structure
 
 ```
 src/
